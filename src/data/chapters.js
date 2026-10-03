@@ -1,0 +1,82 @@
+export const CHAPTERS = [
+  {
+    id: 1,
+    title: 'Kekacauan di Kelas',
+    location: 'classroom',
+    duration: 90,
+    targetObjects: 12,
+    categories: ['organik', 'anorganik'],
+    targetAccuracy: 70,
+    maxMistakes: null,
+    maxB3Mistakes: null,
+    minCleanliness: null,
+    minCombo: null,
+    badgeId: 'penjaga_kelas',
+    unlockAfter: null
+  },
+  {
+    id: 2,
+    title: 'Serbuan di Kantin',
+    location: 'cafeteria',
+    duration: 75,
+    targetObjects: 20,
+    categories: ['organik', 'anorganik'],
+    targetAccuracy: 75,
+    maxMistakes: null,
+    maxB3Mistakes: null,
+    minCleanliness: null,
+    minCombo: 5,
+    badgeId: 'jagoan_kantin',
+    unlockAfter: 1
+  },
+  {
+    id: 3,
+    title: 'Misteri Taman',
+    location: 'garden',
+    duration: 75,
+    targetObjects: 24,
+    categories: ['organik', 'anorganik'],
+    targetAccuracy: 75,
+    maxMistakes: null,
+    maxB3Mistakes: null,
+    minCleanliness: 40,
+    minCombo: null,
+    badgeId: 'pelindung_taman',
+    unlockAfter: 2
+  },
+  {
+    id: 4,
+    title: 'Bahaya di Laboratorium',
+    location: 'laboratory',
+    duration: 60,
+    targetObjects: 25,
+    categories: ['organik', 'anorganik', 'b3'],
+    targetAccuracy: 80,
+    maxMistakes: 3,
+    maxB3Mistakes: null,
+    minCleanliness: null,
+    minCombo: null,
+    badgeId: 'ahli_b3',
+    unlockAfter: 3
+  },
+  {
+    id: 5,
+    title: 'Final di Lapangan',
+    location: 'field',
+    duration: 120,
+    targetObjects: 36,
+    categories: ['organik', 'anorganik', 'b3'],
+    targetAccuracy: 80,
+    maxMistakes: null,
+    maxB3Mistakes: null,
+    minCleanliness: null,
+    minCombo: null,
+    phases: [
+      { label: 'Organik',   categories: ['organik'],   count: 12 },
+      { label: 'Anorganik', categories: ['anorganik'], count: 12 },
+      { label: 'B3',        categories: ['b3'],        count: 12 }
+    ],
+    badgeId: 'penyelamat_sekolah',
+    unlockAfter: 4
+  }
+];
